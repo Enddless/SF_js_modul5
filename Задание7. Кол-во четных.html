@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+       var massiv = [1, 0, 7, 0, 2, 2, 13, 110, 9, 0, 18, 16, 3, 2];
+        var j = 0;
+        var k = 0;
+        var b = 0;
+        document.write("Массив: " + "<br\/>");
+        for (let i = 0; i < massiv.length; i++){
+            if ((massiv[i] % 2 === 0) && (massiv[i] !==0 )){
+              j++;
+          } else if ((massiv[i] % 2 !== 0) && (massiv[i] !==0 )) {
+                  k++;
+          } else {
+                  b++;
+          }
+            document.write(massiv[i]+ ", ");                 
+        };
+        document.write("<br\/>");
+        document.write('Чётных чисел в массиве: '+ j+ "<br\/>");
+        document.write('Нечётных чисел в массиве: '+ k+ "<br\/>");
+        document.write('Нулевых чисел в массиве: '+ b+ "<br\/>");
+
+</script>
+</head>
+<body>
+    
+</body>
+</html>
